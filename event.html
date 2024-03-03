@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title> Halaman Beranda</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Bramastya wika surya">
+  <meta name="nia" content="234311009">
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header {
+    background-color: #666;
+    padding:  5px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    background: #ccc;
+    padding: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  article {
+    float: left;
+    padding:50px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 500px;
+  }
+  section::after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+  }
+  @media (max-width: 600px) {
+    nav, article {
+      height: auto;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h2 style="margin-top: 5px;">Judul Website</h2>
+  </header>
+  
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="gambar.html">Gambar</a></li>
+        <li><a href="event.html">Acara</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Gambar Pemandangan</h1>
+      <div class="image-container">
+        <img src="gambar.jpg" alt="gambar" id="image1" width="200" height="150" 
+             onmouseover="this.style.opacity = 0.5" 
+             onmouseout="this.style.opacity = 1">
+        <img src="gambar1.jpg" alt="gambar1" id="image2" width="200" height="150" 
+             onmouseover="this.style.border = '5px solid blue'" 
+             onmouseout="this.style.border = 'none'">
+        <img src="gambar2.jpg" alt="gambar2" id="image2" width="200" height="150">
+        <img src="gambar4.jpg" alt="gambar4" id="image3" width="200" height="150">
+        <img src="html_advance/gambar/gambar5.jpg" alt="gambar5" id="image5" width="200" height="150">
+        <img src="html_advance/gambar/gambar6.jpg"  alt="gambar" id="image6" width="200" height="150">
+        <p>Kesimpulan</p>
+      </div>
+    </article>
+  </section>
+</body>
+
+<footer>
+  <p>Footer</p>
+</footer>
+</html>

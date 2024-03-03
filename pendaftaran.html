@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penjadwal Pertemuan</title>
+
+    <style>
+        h1 {
+            margin-left: 250px;
+        }
+
+        fieldset {
+            margin-left: 250px;
+            margin-right: 250px;
+            line-height: 3rem;
+        }
+
+        #submit {
+            margin-left: 250px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Penjadwal Pertemuan</h1>
+    
+    <form action="action.php" method="post">
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+            <form>
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama"> <br>
+    
+                <label for="telepon">No. Telepon</label>
+                <input type="tel" name="telepon" id="telepon" pattern="(62)[0-9]{8,9}"> <br>
+    
+                <label for="email">Alamat Email</label>
+                <input type="email" name="email" id="email" value="example@gmail.com"> <br>
+    
+                <label for="ttl">Tanggal Lahir</label>
+                <input type="date" name="ttl" id="ttl" min="1987-01-01" max="1994-01-01">
+            </form>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Permintaan Pertemuan</legend>
+            <form>
+                <label for="tujuan">Tujuan Pertemuan</label>
+                <input type="text" name="tujuan" id="tujuan"> <br>
+    
+                <label for="kepentingan">Tingkat Kepentingan Pertemuan</label>
+                <input type="range" name="kepentingan" id="kepentingan" min="0" max="10"> <br>
+    
+                <label for="tgl">Tanggal</label>
+                <input type="date" name="tgl" id="tgl" min="2024-03-04"><br>
+    
+                <label for="waktu">Waktu</label>
+                <input type="time" name="waktu" id="waktu" min="17.00" max="21:00">
+            </form>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    
+</body>
+</html>
